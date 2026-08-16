@@ -74,7 +74,7 @@ export default function Home() {
         <p className="text-sm text-muted-foreground">
           Built by{' '}
           <a
-            href="https://roshan-portfolio-omega.vercel.app"
+            href="https://roshansultane.vercel.app"
             target="_blank"
             rel="noopener noreferrer"
             className="text-foreground hover:underline"
