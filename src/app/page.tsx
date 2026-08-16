@@ -2,8 +2,8 @@ import Link from 'next/link'
 
 export default function Home() {
   return (
-    <div className="relative min-h-screen overflow-hidden bg-[#0a0a0a]">
-      {/* Background gradient (video alternative — reliable, no external asset) */}
+    <div className="relative min-h-screen overflow-hidden bg-[#0a0a0a] flex flex-col">
+      {/* Background gradient */}
       <div
         className="absolute inset-0 z-0"
         style={{
@@ -13,7 +13,7 @@ export default function Home() {
       />
 
       {/* Navigation */}
-      <nav className="relative z-10 flex items-center justify-between px-8 py-6 max-w-7xl mx-auto">
+      <nav className="relative z-10 flex items-center justify-between px-8 py-6 max-w-7xl mx-auto w-full">
         <span
           className="text-3xl tracking-tight text-foreground"
           style={{ fontFamily: "'Instrument Serif', serif" }}
@@ -45,7 +45,7 @@ export default function Home() {
       </nav>
 
       {/* Hero */}
-      <div className="relative z-10 flex flex-col items-center text-center px-6 pt-32 pb-40">
+      <div className="relative z-10 flex flex-col items-center text-center px-6 pt-32 pb-40 flex-1">
         <h1
           className="text-5xl sm:text-7xl md:text-8xl leading-[0.95] tracking-[-2.46px] max-w-5xl font-normal animate-fade-rise"
           style={{ fontFamily: "'Instrument Serif', serif" }}
@@ -68,6 +68,21 @@ export default function Home() {
           Begin Journey
         </Link>
       </div>
+
+      {/* Footer */}
+      <footer className="relative z-10 px-8 py-6 text-center">
+        <p className="text-sm text-muted-foreground">
+          Built by{' '}
+          <a
+            href="https://roshan-portfolio-omega.vercel.app"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-foreground hover:underline"
+          >
+            Roshan Sultane
+          </a>
+        </p>
+      </footer>
     </div>
   )
 }
